@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="n1" placeholder="Digite um número"> <br>
+    <input type="number" id="n2" placeholder="Digite outro número"><br>
+    <button onclick="adicao()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="divisao()">/</button>
+    <button onclick="apagar()">C</button>
+
+    <script>
+        function adicao() {
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let resultado = n1 + n2;
+            alert('Resultado é: ' + resultado);
+        }
+        function subtracao() {
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let resultado = n1 - n2;
+            alert("Resultado: " + resultado);
+        }
+        function multiplicacao(){
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let resultado = n1 * n2;
+            alert('Resultado: ' + resultado);
+        }
+        function divisao(){
+            let n1 = parseFloat(document.getElementById('n1').value)
+            let n2 = parseFloat(document.getElementById('n2').value)
+            if (n2 != 0 ){
+                let resultado = n1 / n2
+                alert(resultado)
+            } else{
+                alert('Não é possivel dividir por zero')
+            }
+        }
+        function apagar() {
+            document.getElementById('n1').value = '';
+            document.getElementById('n2').value = '';
+        }
+    </script>
+</body>
+</html>
