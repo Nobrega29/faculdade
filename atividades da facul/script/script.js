@@ -25,4 +25,3 @@ else if (opcoes == 4) {
 } else {
     alert('Operação inválida');
 }
-

@@ -11,4 +11,3 @@ if ( media >= 7){
     alert('sua nota é:' + media)
     alert('Reprovado')
 }
-
